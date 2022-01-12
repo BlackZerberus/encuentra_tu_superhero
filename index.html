@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- favicon -->
+    <link rel="icon" href="assets/img/favicon.ico" type="image/gif" sizes="16x16">
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
+        defer></script>
+
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous" defer></script>
+
+    <!-- canvasJS -->
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js" defer></script>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- custom js -->
+    <script src="assets/js/script.js" defer></script>
+    <title>SuperHero</title>
+</head>
+
+<body>
+    <!-- navbar -->
+
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <span class="navbar-brand mb-0 h1">
+                <img src="assets/img/favicon.ico" alt="logo">
+                SuperHero
+            </span>
+        </div>
+    </nav>
+
+    <div class="container pt-3">
+        <!-- header -->
+        <header class="row d-flex justify-content-center">
+            <div class="col-md-4 ">
+                <img class="img-fluid" src="assets/img/sh1.jpg" alt="super-hero-img1">
+            </div>
+        </header>
+
+        <!-- form -->
+        <form>
+            <section class="row d-flex justify-content-center pt-3">
+                <div class="col-md-8">
+                    <h2>Encuentra tu SuperHero</h2>
+                    <label for="id-search" class="form-label">Ingresa el número del SuperHero a buscar</label>
+                    <input type="text" id="id-search" class="form-control mb-2">
+                    <button type="submit" class="btn btn-primary" id="btn-buscar">Buscar</button>
+                </div>
+            </section>
+        </form>
+
+
+        <!-- card con el personaje -->
+        <div class="row mt-3" id="card-section">
+            <div class="col-md-6">
+                <h5 class="text-center">SuperHero Encontrado</h5>
+                <div class="card mb-3">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="assets/img/sh2.jpg" class="img-fluid rounded-start" alt="hero-img" id="hero-img">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title" id="hero-name">nombre</h5>
+                                <p class="card-text" id="connections">conecciones: placeholder
+                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text" id="publisher">publisher</p>
+                                <hr>
+                                <p class="card-text" id="occupation">ocupacion: placeholder</p>
+                                <hr>
+                                <p class="card-text" id="first">primera aparicion:</p>
+                                <hr>
+                                <p class="card-text" id="h">altura</p>
+                                <hr>
+                                <p class="card-text" id="w">peso</p>
+                                <hr>
+                                <p class="card-text" id="alias">alias</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div id="chartContainer" style="height: 300px; width: 100%;"></div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
